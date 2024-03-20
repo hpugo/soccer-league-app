@@ -1,0 +1,58 @@
+.header-container {
+  background-color: #A0CFD3;
+  border-bottom: 2px solid #8D94BA;
+  height: 4.3em;
+}
+.header-container ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+.header-container ul li {
+  font-size: 1.3em;
+  align-items: center;
+  margin-right: 0.5em;
+}
+.header-container ul a {
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  display: inline-block;
+  background-color: #A0CFD3;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+.header-container ul a:hover {
+  background-color: #8D94BA;
+  opacity: 0.7;
+  /* Change color on hover */
+}
+.header-container .menu-container {
+  position: relative;
+}
+.header-container .menu-container .profile-menu {
+  position: absolute;
+  z-index: 1;
+  background-color: #A0CFD3;
+  display: none;
+}
+.header-container .menu-container:hover .profile-menu {
+  display: block;
+}
+.header-container .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .container .logo {
+  display: flex;
+  flex-direction: row;
+}
+.header-container .container h1 {
+  font-size: 24px;
+  padding: 0.5em;
+}
+.header-container .container img {
+  height: 80px;
+  width: 80px;
+  margin: 0.4em;
+}/*# sourceMappingURL=header.css.map */

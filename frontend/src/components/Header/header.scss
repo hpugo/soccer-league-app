@@ -1,0 +1,70 @@
+@import '../scss/colors';
+
+.header-container {
+    background-color: $primary-color;
+    border-bottom: 2px solid $accent-color;  
+    height: 4.3em;
+    
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      li {
+        font-size: 1.3em;
+        align-items: center;
+        // padding: .4em;
+        margin-right: .5em;
+      }
+  
+      a {
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+        display: inline-block;
+        background-color: $primary-color;
+        transition: color 0.3s; /* Add transition for smooth color change */
+        
+        &:hover {
+          background-color: $accent-color;
+          opacity: .7;
+           /* Change color on hover */
+        }
+      }
+    }
+  
+    .menu-container {
+      position: relative;
+  
+      .profile-menu {
+        position: absolute;
+        z-index: 1;
+        background-color:$primary-color;
+        display: none;
+      }
+  
+      &:hover .profile-menu {
+        display: block;
+      }
+    }
+  
+    .container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  
+      .logo {
+        display: flex;
+        flex-direction: row;
+         }
+        h1{
+            font-size: 24px;
+            padding: .5em;
+        }
+        img {
+        height: 80px;
+        width: 80px;
+        // padding: .4em;
+        margin: .4em;
+      }
+    }
+  }
